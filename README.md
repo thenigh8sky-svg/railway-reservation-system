@@ -1,3 +1,4 @@
+print("Welcome to Railway Reservation System")
 # railway-reservation-system
 total_seats = 50
 seats = list(range(1, total_seats + 1))
