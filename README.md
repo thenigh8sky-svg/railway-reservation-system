@@ -29,35 +29,15 @@ def book_ticket():
     
     print(f"Booked Successfully! ID: {booking_id}, Seat: {seat}")
 
-def view_ticket():
-    bid = input("Enter Booking ID: ")
-    if bid in bookings:
-        print(bookings[bid])
-    else:
-        print("Booking not found")
+# Railway Reservation System
 
-def cancel_ticket():
-    bid = input("Enter Booking ID: ")
-    if bid in bookings:
-        seats.append(bookings[bid]["seat"])
-        del bookings[bid]
-        print("Cancelled successfully")
-    else:
-        print("Booking not found")
+## Features
+- Check seat availability
+- Book tickets
+- View reservation
+- Cancel tickets
 
-while True:
-    print("\n1.Check 2.Book 3.View 4.Cancel 5.Exit")
-    choice = input("Enter choice: ")
-    
-    if choice == "1":
-        check_availability()
-    elif choice == "2":
-        book_ticket()
-    elif choice == "3":
-        view_ticket()
-    elif choice == "4":
-        cancel_ticket()
-    elif choice == "5":
-        break
-    else:
-        print("Invalid choice")
+## How to run
+1. Open main.py
+2. Run using Python
+3. Follow menu options
